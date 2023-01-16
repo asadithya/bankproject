@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lOGIN</title>
+</head>
+<body style="text-align:center">
+<h2> Log again</h2>
+<form action="/lognow" method="post">
+{% csrf_token %}
+    <label>Username:</label>
+    <input type="text" name="username" placeholder="Enter your username"><br>
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter your password"><br>
+
+    <button type="submit"><a href="/detail">log now</a></button>
+
+</form>
+</body>
+</html>
